@@ -14,8 +14,9 @@ export default function page() {
             {/* Reach Us Image */}
             <Image
               src={ReachUs}
-              loading='lazy'
+              alt='ReachUs'
               quality={100}
+              width="0"
             />
           </div>
         </div>
