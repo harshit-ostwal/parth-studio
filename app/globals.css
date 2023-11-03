@@ -9,3 +9,11 @@
     --poppins: 'Poppins', sans-serif;
     --merienda: 'Merienda', cursive;
 }
+
+*{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 0%;
+}

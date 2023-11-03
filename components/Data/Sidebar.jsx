@@ -7,23 +7,28 @@ const SidebarData = [
     },
     {
         id: 2,
-        title: 'Home',
-        href: '/',
+        title: 'Wedding',
+        href: '/Wedding',
     },
     {
         id: 3,
-        title: 'Home',
-        href: '/About',
+        title: 'Pre Wedding',
+        href: '/PreWedding',
     },
     {
         id: 4,
-        title: 'Home',
-        href: '/',
+        title: 'Films',
+        href: '/Films',
     },
     {
         id: 5,
-        title: 'Home',
-        href: '/',
+        title: 'About Us',
+        href: '/AboutUs',
+    },
+    {
+        id: 6,
+        title: 'Reach Us',
+        href: '/ReachUs',
     },
 ]
 
