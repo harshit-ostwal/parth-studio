@@ -20,6 +20,7 @@ export default function Films() {
                 width={1920}
                 loading="lazy"
                 height={1080}
+                quality={100}
                 className="object-cover aspect-video"
               ></Image>
 

@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import ReachUs from '@/public/images/ReachUs/ReachUs.jpg'
 import { Send } from 'lucide-react'
 
 export default function page() {
@@ -13,9 +12,12 @@ export default function page() {
           <div>
             {/* Reach Us Image */}
             <Image
-              src={ReachUs}
+              src="https://res.cloudinary.com/davazn01h/image/upload/v1699086298/Parth%20Studio/Reach%20Us/zfismogzg42qnda2ivx1.jpg"
               alt='ReachUs'
-              width="0"
+              width={1920}
+              height={1080}
+              loading="lazy"
+              quality={100}
             />
           </div>
         </div>
@@ -37,7 +39,7 @@ export default function page() {
             </div>
             <div className="flex flex-col gap-3">
               <label htmlFor="f_shoot_date" className="text-gray-500 ml-1">Shoot Date</label>
-              <input type="date" name="f_shoot_date" id="f_shoot_date" className='h-14 rounded-2xl border border-gray-300 bg-transparent p-5 hover:border-black transition-all duration-300 ease-in-out' required />
+              <input type="date" name="f_shoot_date" id="f_shoot_date" className='h-14 w-full rounded-2xl border border-gray-300 bg-transparent p-5 hover:border-black transition-all duration-300 ease-in-out' required />
             </div>
             <div className="flex flex-col gap-3">
               <label htmlFor="f_shoot_type" className="text-gray-500 ml-1">Type Shoot</label>

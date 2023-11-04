@@ -47,7 +47,7 @@ export default function Navbar() {
             <div
                 //Sidebar CSS
                 className={
-                    Menu ? "fixed z-50 left-0 top-0 w-[100%] sm:w-[70%] md:w-[25%] flex flex-col transition-all duration-1000 ease-in-out p-8 h-full bg-slate-800" : "fixed z-50 left-[-100%] w-[100%] sm:w-[70%] md:w-[25%] top-0 flex flex-col transition-all duration-1000 ease-in-out p-8 h-full bg-slate-800"
+                    Menu ? "fixed h-full z-50 left-0 top-0 w-[100%] sm:w-[70%] md:w-[25%] flex flex-col transition-all duration-1000 ease-in-out p-8 bg-slate-800" : "fixed z-50 left-[-100%] w-[100%] sm:w-[70%] md:w-[25%] top-0 flex flex-col transition-all duration-1000 ease-in-out p-8 h-full bg-slate-800"
                 }>
 
                 <div className="flex">
@@ -59,6 +59,8 @@ export default function Navbar() {
                                 alt='Parth Studio'
                                 quality={100}
                                 width={100}
+                                height={100}
+                                loading="lazy"
                             />
                         </Link>
                     </div>
