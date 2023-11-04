@@ -8,18 +8,17 @@ export default function Footer() {
     return (
         <>
             {/* Footer Contains Logo , Navigation , Socail Links , CopyRights */}
-            <div className="bg-black text-white flex flex-col justify-center gap-5 w-full h-56 xl:h-60 lg:h-46 items-center md:p-8">
+            <div className="bg-black text-white flex flex-col justify-center gap-5 w-full h-56 lg:h-46 items-center md:p-8">
                 {/* Website Logo */}
                 <Link href={"/"}>
                     <Image
                         src={Logo}
                         alt='Parth Studio'
-                        quality={100}
+                        loading='lazy'
                         layout="responsive"
                         sizes="(max-width: 1920px) 80px, (max-width: 2600px) 120px, 140px"
                     />
                 </Link>
-
 
                 {/* Copyrights */}
                 <h1 className="text-gray-400 font-Poppins font-semibold text-xs sm:text-base">Copyright © 2023 - All right reserved by Harshit Ostwal</h1>

@@ -16,6 +16,7 @@ export default function page() {
               src={ReachUs}
               alt='ReachUs'
               quality={100}
+              loading='lazy'
               width="0"
             />
           </div>

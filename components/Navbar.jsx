@@ -19,12 +19,10 @@ export default function Navbar() {
         setMenu(!Menu);
     }
 
-
-
     return (
         <>
             {/* Navbar Which Contains Logo And Navigation Bar */}
-            <div className="w-full h-32 bg-white shadow-lg flex p-7 2xl:h-40 2xl:p-10">
+            <div className="w-full h-32 bg-white shadow-lg flex p-7 2xl:p-10">
 
                 {/* Menu Button in the Left */}
                 <button onClick={Toggle}><Grip size={24} color='black' /></button>
@@ -35,7 +33,7 @@ export default function Navbar() {
                         <Image
                             src={LogoBlack}
                             alt='Parth Studio'
-                            quality={100}
+                            loading='lazy'
                             layout='responsive'
                             sizes="(max-width: 1920px) 100px, (max-width: 2600px) 120px, 140px"
                         />
