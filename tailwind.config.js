@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         'Poppins': ['var(--poppins)'],
         'Merienda': ['var(--merienda)'],
+        'Macondo': ['var(--macondo)'],
       },
     },
   },

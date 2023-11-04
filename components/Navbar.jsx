@@ -22,10 +22,10 @@ export default function Navbar() {
     return (
         <>
             {/* Navbar Which Contains Logo And Navigation Bar */}
-            <div className="w-full h-32 bg-white shadow-lg flex p-7 2xl:p-10">
+            <div className="w-full h-32 bg-white shadow-lg flex p-7 2xl:p-10 items-center">
 
                 {/* Menu Button in the Left */}
-                <button onClick={Toggle}><Grip size={24} color='black' /></button>
+                <button onClick={Toggle} className="w-6 h-6"><Grip size={24} color='black' /></button>
 
                 {/* Logo in the Center */}
                 <div className="flex-1 flex justify-center items-center">
@@ -33,22 +33,21 @@ export default function Navbar() {
                         <Image
                             src={LogoBlack}
                             alt='Parth Studio'
-                            loading='lazy'
-                            layout='responsive'
-                            sizes="(max-width: 1920px) 100px, (max-width: 2600px) 120px, 140px"
+                            quality={100}
+                            width={100}
                         />
                     </Link>
                 </div>
 
                 {/* User Button in the Right */}
-                <button><User2 size={24} color='black' /></button>
+                <button className="w-6 h-6" ><User2 size={24} color='black' /></button>
             </div>
 
             {/* Sidebar Navigation */}
             <div
                 //Sidebar CSS
                 className={
-                    Menu ? "fixed left-0 top-0 w-[100%] sm:w-[70%] md:w-[25%] flex flex-col transition-all duration-1000 ease-in-out p-8 h-full bg-slate-800" : "fixed left-[-100%] w-[100%] sm:w-[70%] md:w-[25%] top-0 flex flex-col transition-all duration-1000 ease-in-out p-8 h-full bg-slate-800"
+                    Menu ? "fixed z-50 left-0 top-0 w-[100%] sm:w-[70%] md:w-[25%] flex flex-col transition-all duration-1000 ease-in-out p-8 h-full bg-slate-800" : "fixed z-50 left-[-100%] w-[100%] sm:w-[70%] md:w-[25%] top-0 flex flex-col transition-all duration-1000 ease-in-out p-8 h-full bg-slate-800"
                 }>
 
                 <div className="flex">
@@ -59,8 +58,7 @@ export default function Navbar() {
                                 src={LogoWhite}
                                 alt='Parth Studio'
                                 quality={100}
-                                layout='responsive'
-                                sizes="(max-width: 1920px) 80px, (max-width: 2600px) 120px, 140px"
+                                width={100}
                             />
                         </Link>
                     </div>
@@ -68,9 +66,9 @@ export default function Navbar() {
                     <button onClick={Toggle} className="flex items-center justify-end"><X color='white' className="w-6 h-6 xl:w-8 xl:h-8" /></button>
                 </div>
                 {/* Sidebar Navigation Routes */}
-                <div className="flex flex-1 flex-col justify-start mt-20 items-center gap-4">
+                <div className="flex flex-1 flex-col justify-start mt-10 md:mt-20 items-center gap-4">
                     {SidebarData.map((Data) => (
-                        <Link className="font-Merienda text-slate-400 text-2xl font-semibold" onClick={Toggle} key={Data.id} href={Data.href}>{Data.title}</Link>
+                        <Link className="font-mono text-slate-400 text-2xl font-semibold" onClick={Toggle} key={Data.id} href={Data.href}>{Data.title}</Link>
                     ))}
                 </div>
 

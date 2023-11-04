@@ -8,15 +8,13 @@ export default function Footer() {
     return (
         <>
             {/* Footer Contains Logo , Navigation , Socail Links , CopyRights */}
-            <div className="bg-black text-white flex flex-col justify-center gap-5 w-full h-56 lg:h-46 items-center md:p-8">
+            <div className="bg-black text-white flex flex-col justify-center gap-3 w-full h-80 lg:h-46 items-center md:p-8">
                 {/* Website Logo */}
                 <Link href={"/"}>
                     <Image
                         src={Logo}
                         alt='Parth Studio'
-                        loading='lazy'
-                        layout="responsive"
-                        sizes="(max-width: 1920px) 80px, (max-width: 2600px) 120px, 140px"
+                        width={80}
                     />
                 </Link>
 

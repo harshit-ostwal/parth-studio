@@ -15,8 +15,6 @@ export default function page() {
             <Image
               src={ReachUs}
               alt='ReachUs'
-              quality={100}
-              loading='lazy'
               width="0"
             />
           </div>
