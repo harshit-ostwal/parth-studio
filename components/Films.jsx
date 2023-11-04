@@ -30,7 +30,7 @@ export default function Films() {
 
             {/* Mapping Data For Title , Category & Date */}
             <div className="flex flex-col md:flex-row md:justify-between p-5 space-y-5 md:space-y-0">
-              <div className="flex justify-start w-full text-center md:text-start md:w-2/3">
+              <div className="flex justify-start w-full text-center md:text-start md:w-2/3 lg:w-4/5">
                 <h1 className="text-2xl font-Merienda text-slate-800 font-bold">{data.title}</h1>
               </div>
               <div className="justify-evenly flex md:flex-col flex-row text-center md:text-start">

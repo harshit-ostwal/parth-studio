@@ -70,7 +70,7 @@ export default function Navbar() {
                 {/* Sidebar Navigation Routes */}
                 <div className="flex flex-1 flex-col justify-start mt-10 md:mt-20 items-center gap-4">
                     {SidebarData.map((Data) => (
-                        <Link className="font-mono text-slate-400 text-2xl font-semibold" onClick={Toggle} key={Data.id} href={Data.href}>{Data.title}</Link>
+                        <Link className="font-Merienda text-slate-400 text-2xl font-semibold" onClick={Toggle} key={Data.id} href={Data.href}>{Data.title}</Link>
                     ))}
                 </div>
 
