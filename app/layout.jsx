@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import './globals.css'
 import Footer from '@/components/Footer'
+import BottomToTop from '@/components/BottomToTop'
 
 export const metadata = {
   title: 'Parth Studio',
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
           {children}
         </div>
         <Footer />
+        <BottomToTop />
       </body>
     </html>
   )

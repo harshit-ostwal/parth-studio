@@ -2,6 +2,7 @@ import { Play } from 'lucide-react';
 import React from 'react';
 import FilmsData from './Data/Films';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Films() {
   return (
@@ -15,23 +16,25 @@ export default function Films() {
 
             {/* Mapping Image */}
             <div className="relative">
-              <Image
-                src={data.thumbnail}
-                width={1920}
-                loading="lazy"
-                height={1080}
-                quality={100}
-                className="object-cover aspect-video"
-              ></Image>
+              <Link href={`Films/${data.href}`}>
+                <Image
+                  src={data.thumbnail}
+                  width={1920}
+                  loading="lazy"
+                  height={1080}
+                  quality={100}
+                  className="object-cover aspect-video"
+                ></Image>
+              </Link>
 
               {/* Play Button On Images */}
-              <Play color='white' size={50} className="absolute opacity-80 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+              <Play color='white' href={`Films/${data.href}`} size={50} className="absolute opacity-80 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
             </div>
 
             {/* Mapping Data For Title , Category & Date */}
             <div className="flex flex-col md:flex-row md:justify-between p-5 space-y-5 md:space-y-0">
               <div className="flex justify-start w-full text-center md:text-start md:w-2/3 lg:w-4/5">
-                <h1 className="text-2xl font-Merienda text-slate-800 font-bold">{data.title}</h1>
+                <Link href={`Films/${data.href}`} className="text-2xl font-Merienda text-slate-800 font-bold">{data.title}</Link>
               </div>
               <div className="justify-evenly flex md:flex-col flex-row text-center md:text-start">
                 <div>
