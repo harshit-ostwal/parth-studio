@@ -13,7 +13,7 @@ export default function page() {
 
   return (
     <>
-      <div className="bg-slate-950 w-full h-screen top-0 absolute flex items-center justify-center">
+      <div className="bg-slate-950 w-full h-full top-0 absolute flex items-center justify-center">
         <div className="w-[100%] lg:w-[80%] aspect-video">
 
           {/* FilterVideos Maps The Video By The Href */}
