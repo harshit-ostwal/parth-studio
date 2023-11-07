@@ -7,8 +7,8 @@ export default function page() {
     <>
       {/* ReachUs Page Has Image And Form  */}
       <div className="sm:mt-20 sm:mb-20 mt-10 flex justify-center items-center flex-col gap-10 sm:gap-20">
-        <div className='flex flex-col sm:p-5 p-3 overflow-y-auto w-full gap-10'>
-          <div className="text-lg text-center md:text-xl lg:text-2xl xl:text-3xl font-Merienda font-bold">Looking To Capture Like This Moment With Us?</div>
+        <div className='flex flex-col sm:p-5 p-3 overflow-y-auto gap-10'>
+          <div className="text-xl tracking-wide md:tracking-widest text-center md:text-2xl lg:text-4xl font-Oregano font-bold">Looking To Capture Like This Moment With Us?</div>
           <div>
             {/* Reach Us Image */}
             <Image
@@ -23,7 +23,7 @@ export default function page() {
         </div>
 
         {/* Reach Us Form */}
-        <form className="w-full font-Poppins md:p-10 p-3 text-sm md:text-base">
+        <form className="font-Varela md:p-10 p-3 text-sm md:text-base">
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 md:gap-10">
             <div className="flex flex-col gap-3">
               <label htmlFor="f_couple_name" className="text-gray-500 ml-1">Couple Name</label>

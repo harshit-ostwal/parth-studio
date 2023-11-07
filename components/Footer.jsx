@@ -8,7 +8,7 @@ export default function Footer() {
     return (
         <>
             {/* Footer Contains Logo , Navigation , Socail Links , CopyRights */}
-            <div className="bg-black text-white flex flex-col justify-center gap-3 w-full h-60 items-center p-0 md:p-8">
+            <div className="bg-slate-950 flex flex-col justify-center gap-3 w-full h-60 items-center p-0 md:p-8">
                 {/* Website Logo */}
                 <Link href={"/"}>
                     <Image
@@ -22,7 +22,7 @@ export default function Footer() {
                 </Link>
 
                 {/* Copyrights */}
-                <h1 className="text-gray-400 font-Poppins font-semibold text-xs sm:text-base">Copyright © 2023 - All right reserved by Harshit Ostwal</h1>
+                <h1 className="text-gray-400 font-Oregano tracking-wide md:tracking-widest font-semibold text-xs sm:text-base">Copyright © 2023 - All right reserved by Harshit Ostwal</h1>
 
                 {/* Social Media Icons */}
                 <div className="flex gap-2 text-slate-400 items-center justify-center">

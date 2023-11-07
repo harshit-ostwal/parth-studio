@@ -8,8 +8,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'Poppins': ['var(--poppins)'],
-        'Merienda': ['var(--merienda)'],
+        Oregano: ['var(--oregano)'],
+        Varela: ['var(--varela)'],
+        Salsa: ['var(--salsa)'],
       },
     },
   },
