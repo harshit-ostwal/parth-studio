@@ -12,7 +12,7 @@ export default function Films() {
   return (
     <>
       {/* Grid Layout For Video Links Posters */}
-      <div className={`grid grid-cols-1 md:grid-cols-2 md:p-10 pt-20 pb-20 xl:p-20 gap-5 opacity-0 duration-700 ease-in-out transition-opacity ${loaded ? 'opacity-100' : 'opacity-0'}`} onLoad={() => setLoaded(true)}>
+      <div className={`grid grid-cols-1 md:grid-cols-2 md:p-10 pt-20 pb-20 xl:p-20 gap-5 opacity-0 duration-1000 ease-in-out transition-opacity ${loaded ? 'opacity-100' : 'opacity-0'}`} onLoad={() => setLoaded(true)}>
 
         {/* Mapping The Video Links & Data */}
         {FilmsData.map((data) => (
@@ -27,7 +27,7 @@ export default function Films() {
                   loading="lazy"
                   height={1080}
                   quality={100}
-                  className="object-cover aspect-video"
+                  className="aspect-video object-cover"
                   onLoad={() => setLoaded(true)}
                 />
               </Link>
