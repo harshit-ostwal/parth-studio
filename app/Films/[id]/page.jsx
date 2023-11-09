@@ -17,11 +17,11 @@ export default function page() {
     <>
       <div className="bg-slate-950 absolute top-0 left-0 w-full h-screen flex flex-col lg:p-10 overflow-hidden">
 
-        <div className="flex justify-end items-center p-7 lg:p-0">
+        <div className="flex justify-end p-5">
           <Link href={"/Films"} className="text-white gap-3 flex animate-bounce"><ArrowLeftIcon color='gold' size={24} /> Go back</Link>
         </div>
 
-        <div className="flex-1 flex items-center justify-center pb-[30%]">
+        <div className="flex-1 flex justify-center items-center pb-[30%]">
           {/* FilterVideos Maps The Video By The Href */}
           {filteredVideos.map((data) => (
             <div className="w-[100%] lg:w-[80%]" key={data.id}>
