@@ -25,6 +25,7 @@ export default function Films() {
                   src={data.thumbnail}
                   width={1920}
                   loading="lazy"
+                  alt={data.title}
                   height={1080}
                   quality={100}
                   className="aspect-video object-cover"
