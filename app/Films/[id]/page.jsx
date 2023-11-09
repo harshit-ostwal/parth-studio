@@ -15,17 +15,16 @@ export default function page() {
 
   return (
     <>
-      <div className="bg-slate-950 w-full h-screen p-10">
+      <div className="bg-slate-950 w-full h-screen flex flex-col lg:p-10 overflow-hidden">
 
-        <div className="justify-end flex">
-          <Link href={"/Films"} className="flex text-white gap-3 animate-bounce"><ArrowLeftIcon color='gold' size={24} /> Go back</Link>
+        <div className="flex justify-end items-center p-7 lg:p-0">
+          <Link href={"/Films"} className="text-white gap-3 flex animate-bounce"><ArrowLeftIcon color='gold' size={24} /> Go back</Link>
         </div>
 
-        <div className="w-full flex justify-center">
-
+        <div className="flex-1 flex items-center justify-center pb-[30%]">
           {/* FilterVideos Maps The Video By The Href */}
           {filteredVideos.map((data) => (
-            <div className="w-[100%] lg:w-[80%] aspect-video" key={data.id}>
+            <div className="w-[100%] lg:w-[80%]" key={data.id}>
               <iframe src={data.video} className="aspect-video" width="100%" height="100%" allow="autoplay;"></iframe>
             </div>
           ))}
