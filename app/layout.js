@@ -31,16 +31,17 @@ export default function RootLayout({ children }) {
             <div className="bg-slate-950 h-screen overflow-hidden">
               {children}
             </div>
+            <BottomToTop />
           </>
         ) : (
           <>
-            <div className="bg-white h-screen flex flex-col overflow-y-auto overflow-hidden">
+            <div className="bg-white h-full flex flex-col overflow-y-auto overflow-hidden">
               <Navbar />
-              <div className="flex-1">
+              <div className="">
                 {children}
               </div>
-              <Footer />
               <BottomToTop />
+              <Footer />
             </div>
           </>
         )}
