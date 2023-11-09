@@ -60,7 +60,6 @@ export default function Navbar() {
                                 quality={100}
                                 width={100}
                                 height={100}
-                                loading="lazy"
                             />
                         </Link>
                     </div>

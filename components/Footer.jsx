@@ -17,7 +17,6 @@ export default function Footer() {
                         width={80}
                         height={80}
                         quality={100}
-                        loading="lazy"
                     />
                 </Link>
 
