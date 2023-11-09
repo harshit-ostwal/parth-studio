@@ -18,33 +18,15 @@ const salsa = Salsa({ subsets: ["latin"], variable: "--salsa", weight: "400" });
 
 export default function RootLayout({ children }) {
 
-  const pathname = usePathname();
-
-  const isFilmPath = FilmsData.some((data) => data.href === pathname);
-
-
   return (
     <html lang="en">
-      <body className={`${oregano.variable} ${varela.variable} ${salsa.variable}`}>
-        {isFilmPath ? (
-          <>
-            <div className="bg-slate-950 h-screen overflow-hidden">
-              {children}
-            </div>
-            <BottomToTop />
-          </>
-        ) : (
-          <>
-            <div className="bg-white h-full flex flex-col overflow-y-auto overflow-hidden">
-              <Navbar />
-              <div className="">
-                {children}
-              </div>
-              <BottomToTop />
-              <Footer />
-            </div>
-          </>
-        )}
+      <body className={`bg-white h-screen flex flex-col overflow-y-auto overflow-hidden ${oregano.variable} ${varela.variable} ${salsa.variable}`}>
+        <Navbar />
+        <div className="flex-1">
+          {children}
+        </div>
+        <Footer />
+        <BottomToTop />
       </body>
     </html >
   )
