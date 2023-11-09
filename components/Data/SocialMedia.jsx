@@ -1,31 +1,26 @@
-import { Instagram } from "lucide-react";
+import { Facebook, Instagram, Mail, Twitter, Youtube } from "lucide-react";
 
 //Socail Media Icons
 const SocailMediaIcon = [
     {
         id: 1,
         icon: <Instagram size={28} color="gold" />,
-        href: '/',
+        href: 'https://www.instagram.com/parthstudios',
     },
     {
         id: 2,
-        icon: <Instagram size={28} color="gold" />,
-        href: '/',
+        icon: <Youtube size={28} color="gold" />,
+        href: 'https://www.youtube.com/@parthstudio511',
     },
     {
         id: 3,
-        icon: <Instagram size={28} color="gold" />,
-        href: '/',
+        icon: <Facebook size={28} color="gold" />,
+        href: 'https://www.facebook.com/parthstudios',
     },
     {
         id: 4,
-        icon: <Instagram size={28} color="gold" />,
-        href: '/',
-    },
-    {
-        id: 5,
-        icon: <Instagram size={28} color="gold" />,
-        href: '/',
+        icon: <Mail size={28} color="gold" />,
+        href: 'mailto:mailtoparthstudio@gmail.com',
     },
 ]
 
