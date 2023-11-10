@@ -7,7 +7,16 @@ import Link from 'next/link';
 
 export default function Films() {
 
+  //Load Fully And The Show
   const [loaded, setLoaded] = useState(false);
+
+  //Load More Map After This Number
+  const [visibleItems, setVisibleItems] = useState(4);
+
+  //Load More
+  const loadMoreItems = () => {
+    setVisibleItems((prevVisibleItems) => prevVisibleItems + 4);
+  };
 
   return (
     <>
@@ -15,7 +24,7 @@ export default function Films() {
       <div className={`grid grid-cols-1 md:grid-cols-2 md:p-10 pt-20 pb-20 xl:p-20 gap-5 opacity-0 duration-1000 delay-1000 ease-in-out transition-opacity ${loaded ? 'opacity-100' : 'opacity-0'}`} onLoad={() => setLoaded(true)}>
 
         {/* Mapping The Video Links & Data */}
-        {FilmsData.map((data) => (
+        {FilmsData.slice(0, visibleItems).map((data) => (
           <div key={data.id} className="pb-5 w-full">
 
             {/* Mapping Image */}
@@ -56,6 +65,15 @@ export default function Films() {
           </div>
         ))}
       </div>
+
+      {/* Load More Button */}
+      {FilmsData.length > visibleItems && (
+        <div className="flex items-center justify-center pb-20">
+          <button onClick={loadMoreItems} className="bg-slate-950 font-Salsa hover:text-slate-950 hover:bg-white hover:border hover:border-slate-950 transition-all duration-1000 animate-bounce text-gray-400 px-10 py-4 rounded-xl">
+            Load More
+          </button>
+        </div>
+      )}
     </>
   )
 }

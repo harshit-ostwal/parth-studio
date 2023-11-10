@@ -64,7 +64,7 @@ export default function Navbar() {
                         </Link>
                     </div>
                     {/* Sidebar Navigation Close Button In The Right */}
-                    <button onClick={Toggle} className="flex items-center justify-end"><X color='white' className="w-6 h-6 xl:w-8 xl:h-8" /></button>
+                    <button onClick={Toggle} className="flex items-center justify-end w-6 h-6"><X color='white' /></button>
                 </div>
                 {/* Sidebar Navigation Routes */}
                 <div className="flex flex-1 flex-col justify-start mt-10 md:mt-20 items-center gap-4">
@@ -76,7 +76,7 @@ export default function Navbar() {
                 {/* Sidebar Social Media Icons */}
                 <div className="flex gap-2 text-slate-400 items-center justify-center">
                     {SocailMediaIcon.map((Icons) => (
-                        <Link key={Icons.id} href={Icons.href}>{Icons.icon}</Link>
+                        <Link key={Icons.id} target="_blank" href={Icons.href}>{Icons.icon}</Link>
                     ))}
                 </div>
             </div>

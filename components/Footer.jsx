@@ -26,7 +26,7 @@ export default function Footer() {
                 {/* Social Media Icons */}
                 <div className="flex gap-2 text-slate-400 items-center justify-center">
                     {SocailMediaIcon.map((Icons) => (
-                        <Link key={Icons.id} href={Icons.href}>{Icons.icon}</Link>
+                        <Link key={Icons.id} target="_blank" href={Icons.href}>{Icons.icon}</Link>
                     ))}
                 </div>
             </div>
