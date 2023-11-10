@@ -29,7 +29,7 @@ export default function Navbar() {
 
                 {/* Logo in the Center */}
                 <div className="flex-1 flex justify-center items-center">
-                    <Link href={"/"}>
+                    <Link href={"/"} onClick={() => setMenu(false)}>
                         <Image
                             src={LogoBlack}
                             alt='Parth Studio'
@@ -40,20 +40,20 @@ export default function Navbar() {
                 </div>
 
                 {/* User Button in the Right */}
-                <button className="w-6 h-6" ><User2 size={24} color='black' /></button>
+                <button className="w-6 h-6" onClick={() => setMenu(false)} ><User2 size={24} color='black' /></button>
             </div>
 
             {/* Sidebar Navigation */}
             <div
                 //Sidebar CSS
                 className={
-                    Menu ? "fixed h-full z-50 left-0 top-0 w-[100%] sm:w-[70%] md:w-[25%] flex flex-col transition-all duration-1000 ease-in-out p-8 bg-slate-950" : "fixed z-50 left-[-100%] w-[100%] sm:w-[70%] md:w-[25%] top-0 flex flex-col transition-all duration-1000 ease-in-out p-8 h-full bg-slate-950"
+                    Menu ? "fixed h-full z-50 left-0 top-0 w-[100%] sm:w-[70%] md:w-[25%] flex flex-col transition-all duration-1000 ease-in-out p-8 bg-slate-950" : "fixed z-50 delay-300 left-[-100%] w-[100%] sm:w-[70%] md:w-[25%] top-0 flex flex-col transition-all duration-1000 ease-in-out p-8 h-full bg-slate-950"
                 }>
 
                 <div className="flex">
                     <div className="flex flex-1 justify-center">
                         {/* Sidebar Navigation Logo In The Center */}
-                        <Link href={"/"} className="ml-8">
+                        <Link href={"/"} onClick={() => setMenu(false)} className="ml-8">
                             <Image
                                 src={LogoWhite}
                                 alt='Parth Studio'

@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar'
 import './globals.css'
 import Footer from '@/components/Footer'
 import BottomToTop from '@/components/BottomToTop'
+import NextTopLoader from 'nextjs-toploader';
 import { Varela_Round, Oregano, Salsa } from 'next/font/google'
 
 const oregano = Oregano({ subsets: ["latin"], variable: "--oregano", weight: "400" });
@@ -18,6 +19,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`bg-white h-screen flex flex-col overflow-y-auto overflow-hidden ${oregano.variable} ${varela.variable} ${salsa.variable}`}>
+        <NextTopLoader
+          color='gold'
+          initialPosition={0.01}
+          crawlSpeed={1000}
+          height={4}
+          showSpinner={false}
+          easing="ease-in-out"
+          speed={1000}
+        />
         <Navbar />
         <div className="flex-1">
           {children}
