@@ -11,11 +11,11 @@ export default function Films() {
   const [loaded, setLoaded] = useState(false);
 
   //Load More Map After This Number
-  const [visibleItems, setVisibleItems] = useState(4);
+  const [visibleItems, setVisibleItems] = useState(8);
 
   //Load More
   const loadMoreItems = () => {
-    setVisibleItems((prevVisibleItems) => prevVisibleItems + 4);
+    setVisibleItems((prevVisibleItems) => prevVisibleItems + 8);
   };
 
   return (
@@ -43,7 +43,7 @@ export default function Films() {
               </Link>
 
               {/* Play Button On Images */}
-              <Play color='white' href={`${data.href}`} size={50} className="absolute opacity-80 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+              <Link href={`${data.href}`} className="absolute inset-0 flex items-center justify-center"><Play color='white' size={50} className="opacity-80" /></Link>
             </div>
 
             {/* Mapping Data For Title , Category & Date */}
