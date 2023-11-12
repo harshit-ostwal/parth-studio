@@ -1,7 +1,6 @@
 "use client"
 import WeddingData from '@/components/Data/Wedding';
 import Image from 'next/image';
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react'
 
