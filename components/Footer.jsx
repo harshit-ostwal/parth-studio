@@ -8,7 +8,7 @@ export default function Footer() {
     return (
         <>
             {/* Footer Contains Logo , Navigation , Socail Links , CopyRights */}
-            <div className="bg-slate-950 flex flex-col justify-center gap-3 w-full h-60 items-center md:p-8">
+            <div className="bg-slate-950 flex flex-col justify-center gap-3 w-full py-14 items-center md:p-8">
                 {/* Website Logo */}
                 <Link href={"/"}>
                     <Image

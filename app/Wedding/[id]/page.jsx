@@ -19,7 +19,7 @@ export default function page() {
 
         {/* Filter Wedding Details Mapping By Href */}
         {filteredImage.map((data) => (
-          <>
+          <div key={data.id}>
             <div className="flex flex-col text-center justify-center gap-3 p-10">
               <p className="font-Oregano text-lg md:text-xl lg:text-2xl font-semibold text-slate-700">{data.date}</p>
               <h1 className="font-medium text-2xl md:text-3xl lg:text-4xl text-slate-900 font-Salsa">{data.title}</h1>
@@ -27,19 +27,20 @@ export default function page() {
             </div>
 
             {/* Mapping Poster */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-              {data.poster.map((images, id) => (
-                <Image
-                  src={images}
-                  key={id}
-                  className=""
-                  width={1920}
-                  height={1080}
-                  quality={100}
-                />
+            <div className="columns-1 md:columns-2 lg:columns-3 md:p-10 lg:p-20 space-y-5">
+              {data.poster.map((images, index) => (
+                <div key={index}>
+                  <Image
+                    src={images}
+                    alt={data.title}
+                    width={1920}
+                    height={1080}
+                    quality={100}
+                  />
+                </div>
               ))}
             </div>
-          </>
+          </div>
         ))}
       </div >
     </>

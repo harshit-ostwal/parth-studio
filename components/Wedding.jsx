@@ -43,7 +43,7 @@ export default function Wedding() {
 
                             {/* Text Details On Images */}
                             <Link href={data.href} className="absolute inset-0 flex p-5 text-center gap-5 justify-center flex-col opacity-0 group-hover:opacity-100 duration-1000 transition-all ease-in-out">
-                                <h1 className="font-medium text-2xl md:text-3xl lg:text-4xl text-white font-Varela">{data.title}</h1>
+                                <h1 className="font-medium text-2xl md:text-3xl lg:text-4xl text-white font-Salsa">{data.title}</h1>
                                 <p className="font-Oregano text-lg md:text-xl lg:text-2xl font-semibold text-white">{data.date}</p>
                             </Link>
                         </div>
