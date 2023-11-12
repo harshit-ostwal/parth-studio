@@ -17,6 +17,7 @@ export default function page() {
     <>
       <div className="bg-slate-950 absolute top-0 left-0 w-full h-screen flex flex-col lg:p-10 overflow-hidden">
 
+        {/* Go Back */}
         <div className="flex justify-end p-5">
           <Link href={"/Films"} className="text-white gap-3 flex animate-bounce"><ArrowLeftIcon color='gold' size={24} /> Go back</Link>
         </div>
