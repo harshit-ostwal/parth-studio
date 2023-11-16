@@ -1,5 +1,5 @@
 "use client"
-import WeddingData from '@/components/Data/Wedding';
+import PreWeddingData from '@/components/Data/PreWedding';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import React, { useState } from 'react'
@@ -10,14 +10,14 @@ export default function page() {
   const pathname = usePathname();
 
   //It Filters Videos Data From The FilmsData PathName Href
-  const filteredImage = WeddingData.filter((image) => image.href === pathname);
+  const filteredImage = PreWeddingData.filter((image) => image.href === pathname);
 
   //Load Fully And The Show
   const [loaded, setLoaded] = useState(false);
 
   return (
     <>
-      <div className="overflow-hidden pt-10 pb-10">
+      <div className="overflow-hidden w-full flex flex-col pt-10 pb-10">
 
         {/* Filter Wedding Details Mapping By Href */}
         {filteredImage.map((data) => (
@@ -44,6 +44,12 @@ export default function page() {
                 </div>
               ))}
             </div>
+
+
+            <div className="flex flex-1 flex-col text-center justify-center p-10">
+              <h1 className="font-medium text-xl md:text-2xl lg:text-3xl text-slate-900 font-Oregano animate-fade-in-down">{data.desc}</h1>
+            </div>
+
           </div>
         ))}
       </div >
