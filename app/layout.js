@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${onest.variable} font-Onest`}>
-        <div className="flex flex-col w-full min-h-screen bg-black">
+        <div className="flex flex-col w-full min-h-screen">
           {/* Header */}
           <Header />
 
