@@ -28,7 +28,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        Onest: "var(--onest)"
+        Josefin: "var(--josefin)"
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",

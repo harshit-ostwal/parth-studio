@@ -42,6 +42,16 @@ function ContactForm() {
           <p>Mobile No</p>
           <Input type="text" placeholder="+91 00000 00000" req={true} />
         </div>
+        <div className="flex flex-col w-full gap-2 md:flex-row">
+          <div className="flex flex-col w-full gap-2">
+            <p>Shoot Start Date</p>
+            <Input type="date" req={true} />
+          </div>
+          <div className="flex flex-col w-full gap-2">
+            <p>Shoot End Date</p>
+            <Input type="date" req={true} />
+          </div>
+        </div>
         <div className="flex flex-col w-full gap-2">
           <p>Shoot Date</p>
           <Input type="date" req={true} />

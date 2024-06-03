@@ -1,11 +1,11 @@
-import { Onest } from "next/font/google"
+import { Josefin_Sans } from "next/font/google"
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
-const onest = Onest({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--onest",
+const josefin = Josefin_Sans({
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  variable: "--josefin",
   subsets: ["latin"],
   preload: true
 })
@@ -18,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${onest.variable} font-Onest`}>
+      <body className={`${josefin.variable} font-Josefin tracking-tighter`}>
         <div className="flex flex-col w-full min-h-screen">
           {/* Header */}
           <Header />
