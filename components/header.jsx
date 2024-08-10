@@ -39,8 +39,8 @@ function Header() {
 
     return (
         <>
-            <nav className="flex flex-row items-center justify-between w-full gap-4 p-2 sm:p-5 lg:flex-col">
-                <Image src={Ps} width={140} fetchPriority="high" priority={true} quality={100} />
+            <nav className="flex flex-row items-center justify-between w-full gap-4 p-5 lg:flex-col">
+                <Link href={"/"}><Image src={Ps} width={140} fetchPriority="high" priority={true} quality={100} /></Link>
                 <div className="items-center justify-center hidden h-10 px-3 py-8 space-x-2 border-2 border-solid rounded-full lg:flex border-white/20">
                     {SiteLinksData.map(({ title, href }) => (
                         <Item key={title} title={title} href={href} />

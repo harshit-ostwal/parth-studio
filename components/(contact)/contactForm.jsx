@@ -52,10 +52,6 @@ function ContactForm() {
             <Input type="date" req={true} />
           </div>
         </div>
-        <div className="flex flex-col w-full gap-2">
-          <p>Shoot Date</p>
-          <Input type="date" req={true} />
-        </div>
         <div className="flex flex-col items-start w-full gap-4">
           <p>Shoot Type</p>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">

@@ -1,0 +1,33 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Gallery {
+  id            String @id @default(auto()) @map("_id") @db.ObjectId
+  imageUrl      String
+  imagePublicId String
+}
+
+model Wedding {
+  id             String          @id @default(auto()) @map("_id") @db.ObjectId
+  title          String
+  desc           String
+  category       String
+  date           String
+  posterUrl      String
+  posterPublicId String
+  images         WeddingImages[]
+}
+
+model WeddingImages {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  imageUrl      String
+  imagePublicId String
+  Wedding       Wedding? @relation(fields: [WeddingId], references: [id])
+  WeddingId     String?  @db.ObjectId
+}

@@ -3,8 +3,9 @@ import React from 'react'
 
 function page() {
   return (
-    <div className='flex flex-col items-center justify-center w-full min-h-screen'>
+    <div className='flex flex-col items-center w-full min-h-screen p-5'>
       <Slider />
+      <h1>asdasd</h1>
     </div>
   )
 }

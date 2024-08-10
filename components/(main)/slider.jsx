@@ -5,7 +5,6 @@ import {
     CarouselContent,
     CarouselItem,
 } from "@/components/ui/carousel"
-import Image from 'next/image'
 import Autoplay from "embla-carousel-autoplay"
 import { SliderData } from '@/data/slider'
 
@@ -24,12 +23,12 @@ function Slider() {
             plugins={[plugin.current]}
             onMouseEnter={plugin.current.stop}
             onMouseLeave={plugin.current.reset}
-            className="lg:w-4/5"
+            className="bg-transparent lg:w-11/12 xl:w-11/12"
         >
             <CarouselContent>
                 {SliderData.map((data, index) => (
                     <CarouselItem key={index}>
-                        <Image src={data.imageUrl} className="lg:object-cover w-full lg:h-[786px]" fetchPriority="high" priority={true} quality={100} />
+                        <img src={data.imageUrl} className="w-full h-full lg:h-[800px] object-cover" fetchPriority="high" />
                     </CarouselItem>
                 ))}
             </CarouselContent>
