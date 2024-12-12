@@ -1,5 +1,4 @@
 "use client";
-import { Input } from "@/components/ui/Input";
 import { Label } from "@/components/ui/label";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -17,6 +16,7 @@ import axios from "axios";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { EventTypeData, OtherPlatformTypeData } from "@/data/ReachUs";
+import { Input } from "@/components/ui/input";
 
 function Form() {
 
