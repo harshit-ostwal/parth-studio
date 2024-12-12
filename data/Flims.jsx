@@ -1,0 +1,19 @@
+export const flimsData = [
+    "https://www.youtube.com/embed/Y-F8wSAq8XY/?autoplay=0&loop=1&mute=1&iv_load_policy=3&controls=0&disablekb=1&fs=0",
+    "https://www.youtube.com/embed/Tw0xUSShRPQ/?autoplay=0&loop=1&mute=1&iv_load_policy=3&controls=0&disablekb=1&fs=0",
+    "https://www.youtube.com/embed/NvBOaSY7LPU/?autoplay=0&loop=1&mute=1&iv_load_policy=3&controls=0&disablekb=1&fs=0",
+    "https://www.youtube.com/embed/1dIjYARj2Ts/?autoplay=0&loop=1&mute=1&iv_load_policy=3&controls=0&disablekb=1&fs=0",
+    "https://www.youtube.com/embed/XOtbwi55Dmg/?autoplay=0&loop=1&mute=1&iv_load_policy=3&controls=0&disablekb=1&fs=0",
+    "https://www.youtube.com/embed/y91vPBGo63s/?autoplay=0&loop=1&mute=1&iv_load_policy=3&controls=0&disablekb=1&fs=0",
+    "https://www.youtube.com/embed/aZPeDo2fEHs/?autoplay=0&loop=1&mute=1&iv_load_policy=3&controls=0&disablekb=1&fs=0",
+    "https://www.youtube.com/embed/B_-c7i5L_Zs/?autoplay=0&loop=1&mute=1&iv_load_policy=3&controls=0&disablekb=1&fs=0",
+    "https://www.youtube.com/embed/rOrYW-ZHrps/?autoplay=0&loop=1&mute=1&iv_load_policy=3&controls=0&disablekb=1&fs=0",
+    "https://www.youtube.com/embed/xh2xK3FVOtg/?autoplay=0&loop=1&mute=1&iv_load_policy=3&controls=0&disablekb=1&fs=0",
+    "https://www.youtube.com/embed/AAtV5cBeEKc/?autoplay=0&loop=1&mute=1&iv_load_policy=3&controls=0&disablekb=1&fs=0",
+    "https://www.youtube.com/embed/zOgFXaS9wrg/?autoplay=0&loop=1&mute=1&iv_load_policy=3&controls=0&disablekb=1&fs=0",
+    "https://www.youtube.com/embed/GVIrB5b1RNU/?autoplay=0&loop=1&mute=1&iv_load_policy=3&controls=0&disablekb=1&fs=0",
+    "https://www.youtube.com/embed/N0noQ8vNnDc/?autoplay=0&loop=1&mute=1&iv_load_policy=3&controls=0&disablekb=1&fs=0",
+    "https://www.youtube.com/embed/Oq7XnlsTDzw/?autoplay=0&loop=1&mute=1&iv_load_policy=3&controls=0&disablekb=1&fs=0",
+    "https://www.youtube.com/embed/_X8JI5oAxbg/?autoplay=0&loop=1&mute=1&iv_load_policy=3&controls=0&disablekb=1&fs=0",
+    ""
+]
