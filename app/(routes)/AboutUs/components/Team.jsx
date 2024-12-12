@@ -6,7 +6,7 @@ function Team() {
   return (
     <div className="flex flex-col items-center justify-center w-full gap-20 text-center">
       <div className="flex flex-col items-center justify-center gap-6 text-center">
-        <p className="px-5 py-2 text-sm font-medium rounded-full bg-amber-100 md:text-lg">Team</p>
+        <p className="px-5 py-2 text-sm font-medium rounded-full bg-neutral-200 md:text-lg">Team</p>
         <h1 className="text-6xl font-semibold">Meet The Squad</h1>
       </div>
 

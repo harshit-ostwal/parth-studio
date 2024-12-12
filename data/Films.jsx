@@ -1,4 +1,4 @@
-export const flimsData = [
+export const filmsData = [
     "https://www.youtube.com/embed/Y-F8wSAq8XY/?autoplay=0&loop=1&mute=1&iv_load_policy=3&controls=0&disablekb=1&fs=0",
     "https://www.youtube.com/embed/Tw0xUSShRPQ/?autoplay=0&loop=1&mute=1&iv_load_policy=3&controls=0&disablekb=1&fs=0",
     "https://www.youtube.com/embed/NvBOaSY7LPU/?autoplay=0&loop=1&mute=1&iv_load_policy=3&controls=0&disablekb=1&fs=0",

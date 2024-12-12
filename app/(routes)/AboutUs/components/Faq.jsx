@@ -14,7 +14,7 @@ function Faq() {
     return (
         <div className="flex flex-col items-center justify-center w-full gap-20">
             <div className="flex flex-col items-center justify-center gap-6 text-center">
-                <p className="px-5 py-2 text-sm font-medium rounded-full bg-amber-100 md:text-lg">FAQ</p>
+                <p className="px-5 py-2 text-sm font-medium rounded-full bg-neutral-200 md:text-lg">FAQ</p>
                 <h1 className="text-6xl font-semibold">Frequently Asked Questions</h1>
             </div>
             <div className="flex flex-col w-full">

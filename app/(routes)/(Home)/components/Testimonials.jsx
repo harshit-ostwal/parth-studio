@@ -65,7 +65,7 @@ function Testimonials() {
   return (
     <div className="flex flex-col items-center justify-center w-full gap-20 pb-20">
       <div className="flex flex-col items-center justify-center gap-6">
-        <p className="px-5 py-2 text-sm font-medium rounded-full md:text-lg bg-amber-100">What They Say</p>
+        <p className="px-5 py-2 text-sm font-medium rounded-full md:text-lg bg-neutral-200">What They Say</p>
         <h1 className="text-6xl text-center lg:text-9xl font-SaltyFeathers">Our Clients Testimonial</h1>
       </div>
 
@@ -138,7 +138,7 @@ function Testimonials() {
             }}
             className="flex flex-col gap-2">
             <h1 className="text-xl font-semibold md:text-3xl">{Testimonial[active].name}</h1>
-            <AnimatedText delay={0.03} className="max-w-5xl text-sm truncate md:text-xl text-neutral-500" text={Testimonial[active].review} />
+            <AnimatedText delay={0.03} className="max-w-5xl text-sm truncate text-ellipsis line-clamp-3 md:text-xl text-neutral-500" text={Testimonial[active].review} />
           </motion.div>
           <div className="flex items-center justify-between gap-0">
             <motion.div

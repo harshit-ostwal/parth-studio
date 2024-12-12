@@ -18,7 +18,7 @@ function Footer() {
   }
 
   return (
-    <footer className="flex items-end justify-center w-full min-h-screen py-40 pb-6 overflow-hidden leading-none text-black FooterBG">
+    <footer className="flex items-end justify-center w-full min-h-screen py-40 pb-6 overflow-hidden leading-none text-black bg-gradient-to-t from-neutral-400 via-neutral-300">
       <div className="w-[93%] flex flex-col gap-32">
         <div className="grid w-full grid-cols-1 gap-20 md:grid-cols-2 xl:grid-cols-4">
           <div className="space-y-6">
@@ -30,7 +30,7 @@ function Footer() {
                 <Link href={"/PreWeddings"} className="text-lg font-light sm:text-xl w-fit text-black/80">Pre Weddings</Link>
               </div>
               <div className="flex flex-col gap-4">
-                <Link href={"/Flims"} className="text-lg font-light sm:text-xl w-fit text-black/80">Flims</Link>
+                <Link href={"/Films"} className="text-lg font-light sm:text-xl w-fit text-black/80">Films</Link>
                 <Link href={"/AboutUs"} className="text-lg font-light sm:text-xl w-fit text-black/80">About</Link>
                 <Link href={"/ReachUs"} className="text-lg font-light sm:text-xl w-fit text-black/80">Reach Us</Link>
               </div>
@@ -50,12 +50,12 @@ function Footer() {
               <Link href={"/"} target="_blank" className="z-20 text-2xl border-b md:text-4xl border-black/40 w-fit text-black/80">mailtoparthstudio@gmail.com</Link>
             </div>
             <div className="flex flex-col gap-4">
-              <h1 className="text-3xl sm:text-4xl">Address :</h1>
-              <p className="text-2xl">12, 43rd St, Sarvamangala Colony, Krupa Colony, Ashok Nagar, Chennai, Tamil Nadu 600083</p>
+              <h1 className="text-2xl">Address</h1>
+              <p className="text-base">12, 43rd St, Sarvamangala Colony, Krupa Colony, Ashok Nagar, Chennai, Tamil Nadu 600083</p>
             </div>
             <div className="flex flex-col gap-1">
-              <h1 className="text-3xl sm:text-4xl">Contact</h1>
-              <p className="text-2xl">+91 6381231896</p>
+              <h1 className="text-2xl">Contact</h1>
+              <p className="text-lg tracking-wider">+91 6381231896</p>
             </div>
           </div>
         </div>
@@ -75,8 +75,8 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex items-end justify-between">
-          <h1 className="text-[86px] sm:text-[156px] lg:text-[232px] font-semibold tracking-tight">Parth Studios.</h1>
+        <div className="flex items-start justify-between lg:items-end">
+          <h1 className="text-[86px] sm:text-[156px] lg:text-[232px] font-semibold tracking-tight">Parth Studios</h1>
           <button onClick={handleScrollTop} className="p-4 bg-black rounded-full h-fit">
             <ArrowUpFromDotIcon color="white" className="h-7 w-7 md:w-14 md:h-14" />
           </button>

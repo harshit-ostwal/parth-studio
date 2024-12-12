@@ -10,7 +10,7 @@ function page() {
 
     return (
         <div className="flex flex-col items-center justify-center w-full min-h-screen gap-40 py-20">
-            <div className="flex flex-col items-center justify-center w-full gap-4 text-center">
+            <div className="flex flex-col items-center justify-center w-11/12 gap-4 text-center">
                 <motion.h1
                     initial={{
                         filter: "blur(10px)",
@@ -26,7 +26,7 @@ function page() {
                         duration: 0.7,
                         ease: "easeInOut",
                     }}
-                    className="w-full text-6xl font-semibold text-center sm:text-8xl lg:text-9xl font-SaltyFeathers">Pre Love Chronicles </motion.h1>
+                    className="w-full text-6xl text-center sm:text-8xl lg:text-9xl font-SaltyFeathers">Pre Love Chronicles </motion.h1>
                 <AnimatedText delay={0.05} className="capitalize text-neutral-600" text={"At Parth Studios, we capture the full spectrum of your love story, from playful moments to intimate exchanges. Our pre-wedding shoots are designed to reflect your unique bond. With every click, we create stunning visuals that speak to your emotions. We focus on preserving these precious memories for a lifetime. Let us turn your love into a timeless masterpiece."} />
             </div>
 

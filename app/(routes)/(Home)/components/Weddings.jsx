@@ -7,7 +7,7 @@ function Weddings() {
     return (
         <div className="flex flex-col items-center justify-center w-11/12 gap-20 py-20">
             <div className="flex flex-col items-center justify-center gap-10 text-center">
-                <h1 className="relative text-center text-7xl lg:text-9xl font-SaltyFeathers">Eternal Captures</h1>
+                <h1 className="relative text-6xl text-center md:text-8xl lg:text-9xl font-SaltyFeathers">Eternal Captures</h1>
                 <AnimatedText text="At Parth Studios, we craft Eternal Captures that preserve the essence of your wedding day in timeless photographs. Every fleeting moment, from the first glance to the last dance, is captured with precision and artistry. Let us transform your special day into a visual legacy that lasts forever." className="text-neutral-600" />
             </div>
             <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 2xl:grid-cols-3">

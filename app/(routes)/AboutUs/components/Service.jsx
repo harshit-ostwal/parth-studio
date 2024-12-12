@@ -51,7 +51,7 @@ function Service() {
   return (
     <div classtitle="flex flex-col items-center justify-center w-full gap-20 text-center">
       <div className="flex flex-col items-center justify-center gap-6 text-center">
-        <p className="px-5 py-2 text-sm font-medium rounded-full bg-amber-100 md:text-lg">Our Service</p>
+        <p className="px-5 py-2 text-sm font-medium rounded-full bg-neutral-200 md:text-lg">Our Service</p>
         <h1 className="text-6xl font-semibold">What We Offer</h1>
       </div>
 
