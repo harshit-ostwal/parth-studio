@@ -28,7 +28,7 @@ function page() {
                 <AnimatedText delay={0.05} className="capitalize text-neutral-600" text={"At Parth Studios, we turn your vows into timeless cinematic memories. We capture every heartfelt promise, preserving the emotions and magic of your day. Your love story deserves to be immortalized in stunning detail. With us, your vows will live forever on film, ready to be relived anytime. Let us create a wedding video that truly reflects the depth of your love."} />
             </div>
 
-            <div className="grid items-center w-11/12 h-full grid-cols-3 gap-10">
+            <div className="grid items-center w-11/12 h-full grid-cols-1 gap-10 lg:grid-cols-2 2xl:grid-cols-3">
                 {filmsData.map((data, index) => (
                     <motion.div
                         key={index}
