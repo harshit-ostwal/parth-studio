@@ -8,32 +8,38 @@ import AnimatedText from "@/components/ui/animated-text";
 function Testimonials() {
   const Testimonial = [
     {
-      name: "John Doe",
-      review: "The service was absolutely kajs hdajsda sdajh djahs dkahdka sdha khdas dha, suia sdka sda sdkua jams duas asd gajs kd aksda da dha kdjha kda khdka dskj kas ,das djha skha skjdh ashdkja sjdh akdh asdjk akshdka sjdhjaskdjah sdkhas dhasjhds akh ashdkjashdasdkasdajsdhjkas d aasda dahs d,a smdam sd amsdasdma sda dakjd hakh dajh dkja dajkda djahs da ksjdh ajhakjs hdajshdka kdhakjhkakakjshaksdkahsdasdhakjs dasdj hasdhkaamazing! I couldn't have asked for better support and attention to detail.",
+      name: "Raj & Siddhi",
+      review: "Hey Bro, Thank you so much for all the beautiful photos They are absolutely amazing and instantly remind us of our special day & also all the photos are so natural you and your team were so punctual in all the events. Your candids are truly perfect.. thank you once again 🙏",
       star: 5,
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=faces&fit=crop&w=800&h=800&q=80"
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=faces&fit=crop&w=800&Fh=800&q=80"
     },
     {
-      name: "Jane Smith",
-      review: "Great experience overall, but there were a few minor hiccups. The team handled them professionally.",
+      name: "Neetha",
+      review: "Hey Parth, Thank you!! There is no word to express what exactly I feel, when go through our pictures. It's not just pictures it's our special moments, which were freezed in frames forever as memories!! And the portraits are way perfect! The team, their punctuality and their output is just wow. Once again Thank you so much Parth studio & team.",
       star: 4,
       image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?crop=faces&fit=crop&w=800&h=800&q=80"
     },
     {
-      name: "Emily Brown",
-      review: "Fantastic quality and attention to detail. Highly recommend their services for any project!",
+      name: "Daman & Nisha",
+      review: "Thank u so much for such lovely & beautiful pictures and videos 😊 you and ur team clicked so many good candid pictures too and u people had guide us to pose n the shoot was just wow amazing 😍 once again thank you so much team 😊",
       star: 5,
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=faces&fit=crop&w=800&h=800&q=80"
     },
     {
-      name: "Michael Lee",
-      review: "Good service, but the delivery was slightly delayed. Still, the final result was worth it.",
+      name: "Aashish & Ashmitha",
+      review: "Hey team Parth, The details, the memories, the feelings you captured were all on point. The sense of photography you and your team have is just what we needed. You were utterly stunning! Thank you so much for creating some astonishing memories for us which we are going to cherish all our lives. 🥂",
       star: 3,
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=faces&fit=crop&w=800&h=800&q=80"
     },
     {
-      name: "Sophia Johnson",
-      review: "I am thrilled with the outcome. The team went above and beyond to ensure we were happy.",
+      name: "Karan & Samtha",
+      review: "Parth studios and team are the best photographer and team I have ever seen you guys have give the best output of my pre wedding and wedding pics and videos thank you for giving everything the best.",
+      star: 5,
+      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=faces&fit=crop&w=800&h=800&q=80"
+    },
+    {
+      name: "Karan & Samtha",
+      review: "Macha, You been the best and patient photographer cum Friend 🧿 Loved shooting with you & your team! Hope you reach great heights & Incredible future! And and and Thank you for capturing the best moments of my life with my only partner ❤️🧿😊",
       star: 5,
       image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=faces&fit=crop&w=800&h=800&q=80"
     }
@@ -138,7 +144,7 @@ function Testimonials() {
             }}
             className="flex flex-col gap-2">
             <h1 className="text-xl font-semibold md:text-3xl">{Testimonial[active].name}</h1>
-            <AnimatedText delay={0.03} className="max-w-5xl text-sm truncate text-ellipsis line-clamp-3 md:text-xl text-neutral-500" text={Testimonial[active].review} />
+            <AnimatedText delay={0.03} className="max-w-5xl text-sm capitalize truncate text-ellipsis line-clamp-3 md:text-xl text-neutral-500" text={Testimonial[active].review} />
           </motion.div>
           <div className="flex items-center justify-between gap-0">
             <motion.div
